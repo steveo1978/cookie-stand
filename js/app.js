@@ -119,11 +119,11 @@ for (var j = 0; j < cities.length; j++) {
 
   for (var i = 0; i < cities[j].custPerHourArray.length; i++) {
     var liEle = document.createElement('li');
-    liEle.textContent = cities[j].custPerHourArray[i];
+    liEle.textContent = `${hours[i]}: ${cities[j].custPerHourArray[i]} cookies`;
     ulEle.appendChild(liEle);
   }
   var liEleTotal = document.createElement('li');
-  liEleTotal.textContent = cities[j].totalDailySales;
+  liEleTotal.textContent = `Total: ${cities[j].totalDailySales}`;
   ulEle.appendChild(liEleTotal);
 }
 

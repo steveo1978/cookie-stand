@@ -85,13 +85,12 @@ Store.prototype.calcCustPerHour = function () {
     //       this.totalDailySales = hourlyCust + this.totalDailySales;
     //console.log(this.totalDailySales);
   }
-  
+
   var liEleTotal = document.createElement('li');
   liEleTotal.textContent = `Total: ${cities[j].totalDailySales}`;
   ulEle.appendChild(liEleTotal);
-}
-
 };
+
 
 var dubai = new Store('dubai', 11, 38, 3.7);
 Store.prototype.calcCustPerHour = function () {
@@ -196,3 +195,5 @@ for (var j = 0; j < cities.length; j++) {
   liEleTotal.textContent = `Total: ${cities[j].totalDailySales}`;
   ulEle.appendChild(liEleTotal);
 }
+
+

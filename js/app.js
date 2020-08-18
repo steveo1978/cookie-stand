@@ -84,8 +84,13 @@ Store.prototype.calcCustPerHour = function () {
     //       this.custPerHourArray.push(hourlyCust);
     //       this.totalDailySales = hourlyCust + this.totalDailySales;
     //console.log(this.totalDailySales);
-
   }
+  
+  var liEleTotal = document.createElement('li');
+  liEleTotal.textContent = `Total: ${cities[j].totalDailySales}`;
+  ulEle.appendChild(liEleTotal);
+}
+
 };
 
 var dubai = new Store('dubai', 11, 38, 3.7);
